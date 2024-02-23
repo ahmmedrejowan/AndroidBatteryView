@@ -1,7 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-$dokka.location:com.rejowan.abvsample////PointingToDeclaration/app/com.rejowan.abvsample/index.html
-$dokka.location:com.rejowan.abvsample/MainActivity///PointingToDeclaration/app/com.rejowan.abvsample/-main-activity/index.html
-$dokka.location:com.rejowan.abvsample/MainActivity/MainActivity/#/PointingToDeclaration/app/com.rejowan.abvsample/-main-activity/-main-activity.html
-com.rejowan.abvsample
-
