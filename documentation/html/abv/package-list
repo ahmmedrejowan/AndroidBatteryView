@@ -1,0 +1,31 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.rejowan.abv////PointingToDeclaration/abv/com.rejowan.abv/index.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation.LANDSCAPE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}abv/com.rejowan.abv/-a-b-v/-battery-orientation/-l-a-n-d-s-c-a-p-e/index.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation.PORTRAIT///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}abv/com.rejowan.abv/-a-b-v/-battery-orientation/-p-o-r-t-r-a-i-t/index.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation///PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/-battery-orientation/index.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation/entries/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/-battery-orientation/entries.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation/valueOf/#kotlin.String/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/-battery-orientation/value-of.html
+$dokka.location:com.rejowan.abv/ABV.BatteryOrientation/values/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/-battery-orientation/values.html
+$dokka.location:com.rejowan.abv/ABV///PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/index.html
+$dokka.location:com.rejowan.abv/ABV/ABV/#android.content.Context#android.util.AttributeSet?#kotlin.Int/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/-a-b-v.html
+$dokka.location:com.rejowan.abv/ABV/attachBatteryIntent/#android.content.Intent/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/attach-battery-intent.html
+$dokka.location:com.rejowan.abv/ABV/batteyOrientation/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/battey-orientation.html
+$dokka.location:com.rejowan.abv/ABV/chargeLevel/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/charge-level.html
+$dokka.location:com.rejowan.abv/ABV/chargingBackgroundColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/charging-background-color.html
+$dokka.location:com.rejowan.abv/ABV/chargingIcon/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/charging-icon.html
+$dokka.location:com.rejowan.abv/ABV/chargingLevelColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/charging-level-color.html
+$dokka.location:com.rejowan.abv/ABV/criticalBackgroundColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/critical-background-color.html
+$dokka.location:com.rejowan.abv/ABV/criticalChargeLevel/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/critical-charge-level.html
+$dokka.location:com.rejowan.abv/ABV/criticalLevelColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/critical-level-color.html
+$dokka.location:com.rejowan.abv/ABV/isCharging/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/is-charging.html
+$dokka.location:com.rejowan.abv/ABV/mRadius/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/m-radius.html
+$dokka.location:com.rejowan.abv/ABV/normalBackgroundColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/normal-background-color.html
+$dokka.location:com.rejowan.abv/ABV/normalLevelColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/normal-level-color.html
+$dokka.location:com.rejowan.abv/ABV/size/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/size.html
+$dokka.location:com.rejowan.abv/ABV/warningBackgroundColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/warning-background-color.html
+$dokka.location:com.rejowan.abv/ABV/warningChargeLevel/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/warning-charge-level.html
+$dokka.location:com.rejowan.abv/ABV/warningIcon/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/warning-icon.html
+$dokka.location:com.rejowan.abv/ABV/warningLevelColor/#/PointingToDeclaration/abv/com.rejowan.abv/-a-b-v/warning-level-color.html
+com.rejowan.abv
+

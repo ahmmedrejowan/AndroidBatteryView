@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    tasks.dokkaHtml.configure {
+        outputDirectory.set(file("../documentation/html"))
+    }
 }
 
 dependencies {
