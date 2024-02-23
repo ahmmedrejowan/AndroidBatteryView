@@ -32,9 +32,7 @@ android {
             )
         }
     }
-    subprojects {
-        apply(plugin = "org.jetbrains.dokka")
-    }
+  
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -42,9 +40,7 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    tasks.dokkaHtml.configure {
-        outputDirectory.set(file("../documentation/html"))
-    }
+
 }
 
 dependencies {
