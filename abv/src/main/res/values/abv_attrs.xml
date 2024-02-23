@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ABV">
+
+        <!-- Appearance Normal -->
+        <attr name="abvNormalBgColor" format="color" />
+        <attr name="abvNormalLevelColor" format="color" />
+
+        <!-- Appearance Warning -->
+        <attr name="abvWarningBgColor" format="color" />
+        <attr name="abvWarningLevelColor" format="color" />
+
+        <!-- Appearance Critical -->
+        <attr name="abvCriticalBgColor" format="color" />
+        <attr name="abvCriticalLevelColor" format="color" />
+
+        <!-- Appearance Charging -->
+        <attr name="abvChargingBgColor" format="color" />
+        <attr name="abvChargingLevelColor" format="color" />
+
+        <!-- Data -->
+        <attr name="abvChargeLevel" format="integer" />
+        <attr name="abvWarningChargeLevel" format="integer" />
+        <attr name="abvCriticalChargeLevel" format="integer" />
+        <attr name="abvIsCharging" format="boolean" />
+
+        <!-- Radius -->
+        <attr name="abvRadius" format="integer" />
+
+
+        <!-- Orientation -->
+        <attr name="abvBatteryOrientation" format="enum">
+            <enum name="portrait" value="0" />
+            <enum name="landscape" value="1" />
+        </attr>
+
+
+        <!-- Size -->
+        <attr name="abvSize" format="integer" />
+
+        <!-- Icon -->
+        <attr name="abvChargingIcon" format="reference" />
+        <attr name="abvWarningIcon" format="reference" />
+
+
+
+
+    </declare-styleable>
+
+
+</resources>
