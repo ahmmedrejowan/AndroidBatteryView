@@ -12,7 +12,21 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:abvBatteryOrientation="portrait"
-        app:abvSize="200"
-       />
+        app:abvChargeLevel="5"
+        app:abvChargingBgColor="#89EC9E"
+        app:abvChargingIcon="@drawable/ic_charge_abv"
+        app:abvChargingLevelColor="#4DD86C"
+        app:abvCriticalBgColor="#EF5350"
+        app:abvCriticalChargeLevel="10"
+        app:abvCriticalLevelColor="#B71C1C"
+        app:abvIsCharging="false"
+        app:abvNormalBgColor="#86B6F6"
+        app:abvNormalLevelColor="#4E94F1"
+        app:abvRadius="10"
+        app:abvSize="50"
+        app:abvWarningBgColor="#FFCF96"
+        app:abvWarningChargeLevel="30"
+        app:abvWarningIcon="@drawable/ic_warning_abv"
+        app:abvWarningLevelColor="#F5AD56" />
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.rejowan.abvsample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
