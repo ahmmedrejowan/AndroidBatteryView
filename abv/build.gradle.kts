@@ -1,8 +1,11 @@
+apply {
+    plugin("maven-publish")
+}
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id ("org.jetbrains.dokka")
-    id("maven-publish")
 }
 
 android {
@@ -48,7 +51,7 @@ dependencies {
 configure<PublishingExtension> {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.rejowan.abv"
+            groupId = "com.rejowan"
             artifactId = "abv"
             version = "0.1.0"
             afterEvaluate { artifact(tasks.getByName("bundleReleaseAar"))
