@@ -13,7 +13,6 @@ import android.graphics.RectF
 import android.graphics.drawable.PaintDrawable
 import android.os.BatteryManager
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import java.text.DecimalFormat
@@ -57,8 +56,8 @@ class ABV @JvmOverloads constructor(
     var criticalLevelColor: Int = Color.parseColor("#B71C1C")
     var chargingBackgroundColor: Int = Color.parseColor("#89EC9E")
     var chargingLevelColor: Int = Color.parseColor("#4DD86C")
-    var chargingIcon: Int = R.drawable.ic_charge
-    var warningIcon: Int = R.drawable.ic_warning
+    var chargingIcon: Int = R.drawable.ic_charge_abv
+    var warningIcon: Int = R.drawable.ic_warning_abv
     var size = 50
     var mRadius = 10f
     var chargeLevel = 50
