@@ -19,18 +19,13 @@
 - [Prerequisites](#prerequisites)
 - [Dependency](#dependency)
 - [Usage](#usage)
-  - [XML](#xml)
-  - [Kotlin](#kotlin)
-  - [Java](#java)
+- [BroadcastReceiver](#broadcastReceiver)
 - [Customization](#customization)
-  - [XML](#xml-1)
-  - [Kotlin](#kotlin-1)
-  - [Java](#java-1)
-- [Attributes and Methods](#attributes-and-methods)
+- [Attributes](#attribute)
 - [Notes](#notes)
 - [Contribute](#contribute)
 - [License](#license)
--
+
 </details>
 
 ## Purpose
@@ -291,7 +286,11 @@ Full list of attributes available
 | `abvChargingIcon`        | reference    | Icon displayed when charging              |
 | `abvWarningIcon`         | reference    | Icon displayed in warning state           |
 
-
+## Notes
+- The library is in its early stages, so there may be some bugs.
+- If you find any bugs, please report them in the `Issues` tab.
+- For Documentation, please visit the [Documentation](https://ahmmedrejowan.github.io/AndroidBatteryView/documentation/html/index.html)
+- Sample app is available in the [app](https://github.com/ahmmedrejowan/AndroidBatteryView/tree/master/app) directory.
 
 ## Contribute
 Please fork this repository and contribute back using [pull requests](https://github.com/ahmmedrejowan/AndroidBatteryView/pulls).
