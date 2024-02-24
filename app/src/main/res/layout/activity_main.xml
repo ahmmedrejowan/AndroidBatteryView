@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:abvBatteryOrientation="portrait"
-        app:abvChargeLevel="25"
         app:abvRadius="10"
-        app:abvSize="50"/>
+        app:abvSize="200"/>
 
 </RelativeLayout>

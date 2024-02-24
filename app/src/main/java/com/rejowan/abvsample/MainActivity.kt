@@ -30,12 +30,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-    //    registerReceiver(batteryReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
+        registerReceiver(batteryReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
 
     }
 
     override fun onDestroy() {
         super.onDestroy()
-       // unregisterReceiver(batteryReceiver)
+        unregisterReceiver(batteryReceiver)
     }
 }

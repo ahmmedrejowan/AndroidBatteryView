@@ -39,9 +39,9 @@ The Advanced Battery View (ABV) library was born out of frustration with the tim
 
 ## Demo
 
-| Normal  | Charging  |  Warning   | Critical |
-|-------|--------------|----------------|------|
-|  ![Shot1](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot1.png)  |  ![Shot2](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot2.png) |  ![Shot3](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot4.png) |  ![Shot4](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot3.png) 
+| Normal  | Charging  | Warning                                                                                             | Critical |
+|-------|--------------|-----------------------------------------------------------------------------------------------------|------|
+|  ![Shot1](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot1.png)  |  ![Shot2](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot2.png) | ![Shot3](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot3.png) |  ![Shot4](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot4.png) 
 
 ## Prerequisites
 
