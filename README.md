@@ -88,7 +88,7 @@ Add this to your module's `build.gradle.kts` file (latest version <a href="https
 ``` kotlin
 dependencies {
     ...
-    implementation("com.github.ahmmedrejowan:AndroidBatteryView:0.1.0")
+    implementation("com.github.ahmmedrejowan:AndroidBatteryView:0.1")
 }
 ```
 </details>
@@ -99,7 +99,7 @@ dependencies {
 ``` groovy
 dependencies {
     ...
-    implementation 'com.github.ahmmedrejowan:AndroidBatteryView:0.1.0'
+    implementation 'com.github.ahmmedrejowan:AndroidBatteryView:0.1'
 }
 ```
 </details>
