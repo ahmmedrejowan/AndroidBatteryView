@@ -1,13 +1,11 @@
 package com.rejowan.abvsample
 
-import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.rejowan.abvsample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private val batteryReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
 
-            if (intent!=null){
+            if (intent != null) {
                 binding.abv.attachBatteryIntent(intent)
             }
 
@@ -32,12 +30,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        registerReceiver(batteryReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
+    //    registerReceiver(batteryReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
 
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        unregisterReceiver(batteryReceiver)
+       // unregisterReceiver(batteryReceiver)
     }
 }
