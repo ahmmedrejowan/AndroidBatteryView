@@ -9,23 +9,29 @@
  <p align="center"> <a href="https://github.com/ahmmedrejowan/AndroidBatteryView/issues"><img src="https://img.shields.io/github/issues/ahmmedrejowan/AndroidBatteryView" alt="GitHub issues"></a> <a href="https://github.com/ahmmedrejowan/AndroidBatteryView/network"><img src="https://img.shields.io/github/forks/ahmmedrejowan/AndroidBatteryView" alt="GitHub forks"></a> <a href="https://github.com/ahmmedrejowan/AndroidBatteryView/stargazers"><img src="https://img.shields.io/github/stars/ahmmedrejowan/AndroidBatteryView" alt="GitHub stars"></a> <a href="https://github.com/ahmmedrejowan/AndroidBatteryView/graphs/contributors"> <img src="https://img.shields.io/github/contributors/ahmmedrejowan/AndroidBatteryView" alt="GitHub contributors"></a>   </p>
 
 ## Table of Contents
+
+<details>
+<summary>Click to Expand</summary>
+
 - [Purpose](#purpose)
 - [Features](#features)
 - [Demo](#demo)
 - [Prerequisites](#prerequisites)
 - [Dependency](#dependency)
 - [Usage](#usage)
-    - [XML](#xml)
-    - [Kotlin](#kotlin)
-    - [Java](#java)
+  - [XML](#xml)
+  - [Kotlin](#kotlin)
+  - [Java](#java)
 - [Customization](#customization)
-    - [XML](#xml-1)
-    - [Kotlin](#kotlin-1)
-    - [Java](#java-1)
+  - [XML](#xml-1)
+  - [Kotlin](#kotlin-1)
+  - [Java](#java-1)
 - [Attributes and Methods](#attributes-and-methods)
 - [Notes](#notes)
 - [Contribute](#contribute)
 - [License](#license)
+-
+</details>
 
 ## Purpose
 The Advanced Battery View (ABV) library was born out of frustration with the time-consuming task of creating a battery view component for Android apps. Developed to avoid repetitive tasks and streamline development, ABV offers a simple solution for integrating a customizable battery view. It aims to save developers time and effort, enhancing user experience by providing a visually appealing representation of battery status without the hassle of reinventing the wheel.
@@ -37,9 +43,10 @@ The Advanced Battery View (ABV) library was born out of frustration with the tim
 - Can be attached to BroadcastReceiver Intent
 
 ## Demo
-<img src="https://github.com/ahmmedrejowan/AndroidBatteryView/blob/master/files/listgridswitch.gif?raw=true" width="300px"/>
 
-
+| Normal  | Charging  |  Warning   | Critical |
+|-------|--------------|----------------|------|
+|  ![Shot1](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot1.png)  |  ![Shot2](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot2.png) |  ![Shot3](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot4.png) |  ![Shot4](https://raw.githubusercontent.com/ahmmedrejowan/AndroidBatteryView/master/files/shot3.png) 
 
 ## Prerequisites
 
@@ -102,6 +109,74 @@ dependencies {
 ```
 </details>
 
+## Usage
+
+### XML
+
+``` XML 
+<com.rejowan.abv.ABV
+    android:id="@+id/abv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    app:abvBatteryOrientation="portrait"
+    app:abvRadius="10"
+    app:abvSize="50"/>
+
+```
+
+### Kotlin
+
+``` Kotlin
+val abv = binding.abv
+abv.size = 50
+abv.mRadius = 10f
+abv.chargeLevel = 50
+abv.batteyOrientation = BatteryOrientation.PORTRAIT
+abv.isCharging = false
+```
+
+## BroadcastReceiver
+This is the most unique feature of the library. You can attach your broadcast receiver intent to this view and it'll automatically show the status of the device battery.
+
+- Create a broadcast receiver variable.
+- Register the receiver to the activity/fragment
+- Unregister when destroyed
+- Attach the intent from the receiver to the view
+
+**Benefits**
+- **You don't need to pass the charging level, status individually**
+- **Automatically it'll get the charging level, stauts from the intent**
+- **Minimal code with no issues**
+
+Here is an example
+
+``` Kotlin
+class MainActivity : AppCompatActivity() {
+
+    private val binding: ActivityMainBinding by lazy {ActivityMainBinding.inflate(layoutInflater)}
+
+    private val batteryReceiver: BroadcastReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
+            if (intent!=null){
+                binding.abv.attachBatteryIntent(intent)
+            }
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
+        registerReceiver(batteryReceiver, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(batteryReceiver)
+    }
+}
+```
 
 ## Customization
 
@@ -216,3 +291,33 @@ Full list of attributes available
 | `abvChargingIcon`        | reference    | Icon displayed when charging              |
 | `abvWarningIcon`         | reference    | Icon displayed in warning state           |
 
+
+
+## Contribute
+Please fork this repository and contribute back using [pull requests](https://github.com/ahmmedrejowan/AndroidBatteryView/pulls).
+
+Any contributions, large or small, major features, bug fixes, are welcomed and appreciated.
+
+Let me know which features you want in the future in `Request Feature` tab.
+
+If this project helps you a little bit, then give a to Star ⭐ the Repo.
+
+## License
+* [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+```
+Copyright 2024 ahmmedrejowan
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+```
