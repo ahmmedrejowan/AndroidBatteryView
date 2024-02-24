@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/ahmmedrejowan/AndroidBatteryView/blob/master/files/logo.svg?raw=true" width="50px" align="center"/></p>
+<p align="center"><img src="https://github.com/ahmmedrejowan/AndroidBatteryView/blob/master/files/logo.svg?raw=true" width="100px" align="center"/></p>
 <h1 align="center">Andrid Battery View</h1> 
 
 <p align="center"> <a href="https://www.android.com"><img src="https://img.shields.io/badge/platform-Android-yellow.svg" alt="platform"></a>
