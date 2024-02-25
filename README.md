@@ -62,6 +62,7 @@ dependencyResolutionManagement {
     }
 }
 ```
+
 </details>
 
 <details>
@@ -76,6 +77,7 @@ dependencyResolutionManagement {
 		}
 	}
 ```
+
 </details>
 
 
@@ -91,6 +93,7 @@ dependencies {
     implementation("com.github.ahmmedrejowan:AndroidBatteryView:0.1")
 }
 ```
+
 </details>
 
 <details>
