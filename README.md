@@ -29,7 +29,7 @@
 </details>
 
 ## Purpose
-The Advanced Battery View (ABV) library was born out of frustration with the time-consuming task of creating a battery view component for Android apps. Developed to avoid repetitive tasks and streamline development, ABV offers a simple solution for integrating a customizable battery view. It aims to save developers time and effort, enhancing user experience by providing a visually appealing representation of battery status without the hassle of reinventing the wheel.
+The Android Battery View (ABV) library was born out of frustration with the time-consuming task of creating a battery view component for Android apps. Developed to avoid repetitive tasks and streamline development, ABV offers a simple solution for integrating a customizable battery view. It aims to save developers time and effort, enhancing user experience by providing a visually appealing representation of battery status without the hassle of reinventing the wheel.
 
 ## Features
 - Lightweight
