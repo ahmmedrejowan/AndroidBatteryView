@@ -10,9 +10,6 @@
 
 ## Table of Contents
 
-<details>
-<summary>Click to Expand</summary>
-
 - [Purpose](#purpose)
 - [Features](#features)
 - [Demo](#demo)
@@ -25,8 +22,6 @@
 - [Notes](#notes)
 - [Contribute](#contribute)
 - [License](#license)
-
-</details>
 
 ## Purpose
 The Android Battery View (ABV) library was born out of frustration with the time-consuming task of creating a battery view component for Android apps. Developed to avoid repetitive tasks and streamline development, ABV offers a simple solution for integrating a customizable battery view. It aims to save developers time and effort, enhancing user experience by providing a visually appealing representation of battery status without the hassle of reinventing the wheel.
@@ -47,8 +42,6 @@ The Android Battery View (ABV) library was born out of frustration with the time
 
 ### Kotlin DSL
 
-<details open>
-<summary>Kotlin DSL</summary>
 
 ``` Kotlin
 dependencyResolutionManagement {
@@ -63,10 +56,6 @@ dependencyResolutionManagement {
 }
 ```
 
-</details>
-
-<details>
-<summary>Groovy DSL</summary>
 
 ``` groovy
 dependencyResolutionManagement {
@@ -78,14 +67,11 @@ dependencyResolutionManagement {
 	}
 ```
 
-</details>
 
 
 ## Dependency
 Add this to your module's `build.gradle.kts` file (latest version <a href="https://jitpack.io/#ahmmedrejowan/AndroidBatteryView"><img src="https://jitpack.io/v/ahmmedrejowan/AndroidBatteryView.svg" alt="JitPack"></a>):
 
-<details open>
-<summary>Kotlin DSL</summary>
 
 ``` kotlin
 dependencies {
@@ -94,10 +80,6 @@ dependencies {
 }
 ```
 
-</details>
-
-<details>
-<summary>Groovy DSL</summary>
 
 ``` groovy
 dependencies {
@@ -105,7 +87,6 @@ dependencies {
     implementation 'com.github.ahmmedrejowan:AndroidBatteryView:0.1'
 }
 ```
-</details>
 
 ## Usage
 
@@ -179,8 +160,6 @@ class MainActivity : AppCompatActivity() {
 
 ### XML
 
-<details open>
-<summary>XML Customization</summary>
 
 ``` XML 
 <com.rejowan.abv.ABV
@@ -206,12 +185,9 @@ class MainActivity : AppCompatActivity() {
     app:abvChargingIcon="@drawable/ic_charge_abv"
     app:abvWarningIcon="@drawable/ic_warning_abv" />
 ```
-</details>
+
 
 ### Kotlin
-
-<details>
-<summary>Kotlin Customization (click to Expand)</summary>
 
 ``` Kotlin
 val abv = binding.abv
@@ -233,35 +209,6 @@ abv.criticalChargeLevel = 10
 abv.batteyOrientation = BatteryOrientation.PORTRAIT
 abv.isCharging = false
 ```
-</details>
-
-### Java
-
-<details>
-<summary>Java Customization (click to Expand)</summary>
-
-``` Java
-ABV abv = binding.avb;
-abv.setNormalBackgroundColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setNormalLevelColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setWarningBackgroundColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setWarningLevelColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setCriticalBackgroundColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setCriticalLevelColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setChargingBackgroundColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setChargingLevelColor(ContextCompat.getColor(this, R.color.yourColor));
-abv.setChargingIcon(R.drawable.ic_charge_abv);
-abv.setWarningIcon(R.drawable.ic_warning_abv);
-abv.setSize(50);
-abv.setRadius(10f);
-abv.setChargeLevel(50);
-abv.setWarningChargeLevel(30);
-abv.setCriticalChargeLevel(10);
-abv.setBatteryOrientation(BatteryOrientation.PORTRAIT);
-abv.setCharging(false);
-
-```
-</details>
 
 
 ## Attribute
